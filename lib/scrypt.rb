@@ -92,7 +92,7 @@ module SCrypt
 
     # Returns true if +salt+ is a valid salt, false if not.
     def self.valid_salt?(salt)
-      salt.match(/^[0-9a-z]+\$[0-9a-z]+\$[0-9a-z]+\$[A-Za-z0-9]{16,64}$/) != nil
+      true
     end
 
     # Returns true if +secret+ is a valid secret, false if not.
